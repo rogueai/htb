@@ -6,10 +6,13 @@
 <div id="response"></div>
 
 <script>
-var x = new XMLHttpRequest();
-x.open("GET", "file:///etc/passwd", false);
-x.send();
-document.getElementById('response').innerHTML = "Ressponse:\n\n" + x.responseText;
+//var x = new XMLHttpRequest();
+//x.open("GET", "file:///etc/passwd", false);
+//x.send();
+//document.getElementById('response').innerHTML = "Ressponse:\n\n" + x.responseText;
+
+fetch('file:///etc/passwd')
+  .then(response => document.getElementById('response').innerHTML = "Ressponse:\n\n" + response.text())
 </script>
   
 </body>

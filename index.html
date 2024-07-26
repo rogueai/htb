@@ -12,6 +12,10 @@ x.open("GET", "file:///etc/passwd", false);
 x.send();
 d.innerHTML = d.innerHTML + "\nLoaded.\n\n";
 d.innerHTML = d.innerHTML + "Response: " + x.statusText + " \n\n" + x.responseText;
+setTimeout(() => {
+  console.log("Delayed for 5 seconds.");
+}, "5000");
+
 </script>
 </body>
 </html>

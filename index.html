@@ -5,13 +5,13 @@
 //var d = document.getElementById('response');
 //d.innerHTML = navigator.userAgent;
 var x = new XMLHttpRequest();
-console.log("test");
 x.open("GET", "file:///etc/passwd", false);
 x.send();
 //d.innerHTML = d.innerHTML + "\nLoaded.\n\n";
 //d.innerHTML = d.innerHTML + "Response: " + x.statusText + " \n\n" + x.responseText;
 document.open();
-document.write(x.responseText);
+document.write(x.readyState);
+//document.write(x.responseText);
 document.close();
 </script>
 

